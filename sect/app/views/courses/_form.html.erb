@@ -11,37 +11,37 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :nome_instrutor %>
-    <%= form.text_field :nome_instrutor %>
+    <%= form.text_field :nome_instrutor, class: "form-control col-6" %>
   </div>
 
   <div class="field">
     <%= form.label :email_instrutor %>
-    <%= form.text_field :email_instrutor %>
+    <%= form.text_field :email_instrutor, class: "form-control col-6"%>
   </div>
 
   <div class="field">
     <%= form.label :titulo %>
-    <%= form.text_field :titulo %>
+    <%= form.text_field :titulo, class: "form-control col-6" %>
   </div>
 
   <div class="field">
     <%= form.label :carga_horaria %>
-    <%= form.number_field :carga_horaria %>
+    <%= form.number_field :carga_horaria, class: "form-control col-6" %>
   </div>
 
   <div class="field">
     <%= form.label :vagas %>
-    <%= form.number_field :vagas %>
+    <%= form.number_field :vagas, class: "form-control col-6" %>
   </div>
 
   <div class="field">
     <%= form.label :requisito %>
-    <%= form.text_field :requisito %>
+    <%= form.text_field :requisito, class: "form-control col-6" %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Enviar", class: "btn btn-primary" %>
   </div>
 <% end %>

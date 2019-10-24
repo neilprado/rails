@@ -2,7 +2,7 @@
 
 <h1>Subscriptions</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Nome</th>
@@ -18,8 +18,8 @@
       <tr>
         <td><%= subscription.nome %></td>
         <td><%= subscription.matricula %></td>
-        <td><%= subscription.status %></td>
-        <td><%= subscription.course %></td>
+        <td><%= subscription.status ? 'Deferido' : 'Não Deferido' %></td>
+        <td><%= subscription.course.titulo %></td>
         <td><%= link_to 'Show', subscription %></td>
         <td><%= link_to 'Edit', edit_subscription_path(subscription) %></td>
         <td><%= link_to 'Destroy', subscription, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Subscription', new_subscription_path %>
+<a href="<%= new_subscription_path %>" class="btn btn-outline btn-primary">Inscreva-se</a>

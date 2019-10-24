@@ -13,25 +13,20 @@
 
   <div class="field">
     <%= form.label :nome %>
-    <%= form.text_field :nome %>
+    <%= form.text_field :nome, class: "form-control col-6" %>
   </div>
 
   <div class="field">
     <%= form.label :matricula %>
-    <%= form.number_field :matricula %>
-  </div>
-
-  <div class="field">
-    <%= form.label :status %>
-    <%= form.check_box :status %>
+    <%= form.number_field :matricula, class: "form-control col-6" %>
   </div>
 
   <div class="field">
     <%= form.label :course_id %>
-    <%= form.text_field :course_id %>
+    <%= collection_select(:subscription, :course_id, @cursos, :id, :titulo) %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Submit", class: "btn btn-primary" %>
   </div>
 <% end %>

@@ -15,10 +15,12 @@ class SubscriptionsController < ApplicationController
   # GET /subscriptions/new
   def new
     @subscription = Subscription.new
+    @cursos = Course.all
   end
 
   # GET /subscriptions/1/edit
   def edit
+    @cursos = Course.all
   end
 
   # POST /subscriptions

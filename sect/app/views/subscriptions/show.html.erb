@@ -12,12 +12,12 @@
 
 <p>
   <strong>Status:</strong>
-  <%= @subscription.status %>
+  <%= @subscription.status ? 'Deferido' : 'Não Deferido' %>
 </p>
 
 <p>
   <strong>Course:</strong>
-  <%= @subscription.course %>
+  <%= @subscription.course.titulo %>
 </p>
 
 <%= link_to 'Edit', edit_subscription_path(@subscription) %> |
