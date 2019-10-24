@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome_instrutor: MyString
+  email_instrutor: MyString
+  titulo: MyString
+  carga_horaria: 1
+  vagas: 1
+  requisito: MyString
+
+two:
+  nome_instrutor: MyString
+  email_instrutor: MyString
+  titulo: MyString
+  carga_horaria: 1
+  vagas: 1
+  requisito: MyString
